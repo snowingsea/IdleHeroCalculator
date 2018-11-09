@@ -1,0 +1,28 @@
+{
+  "name": "IdleHeroCalculator",
+  "version": "1.0.0",
+  "description": "放置奇兵计算器",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowingsea/IdleHeroCalculator.git"
+  },
+  "keywords": [],
+  "author": "snowingsea<snowingsea@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snowingsea/IdleHeroCalculator/issues"
+  },
+  "homepage": "https://github.com/snowingsea/IdleHeroCalculator#readme",
+  "scripts": {
+    "init": "validate-commit-msg"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "validate-commit-message": "^3.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
