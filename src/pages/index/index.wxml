@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <view class="section__ctn">
+      <image class="image"
+             mode="widthFix"
+             src="{{ currentEvent.image }}">
+      </image>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">当前掉落</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input input"
+                 type="number"
+                 focus
+                 placeholder="请输入当前掉落数"
+                 bindinput="obtain"/>
+        </view>
+      </view>
+    </view>
+    
+    <view class="weui-form-preview" wx:if="{{total}}"> 
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">预计掉落</view>
+          <view class="weui-form-preview__value_in-hd">
+            {{ total }}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
